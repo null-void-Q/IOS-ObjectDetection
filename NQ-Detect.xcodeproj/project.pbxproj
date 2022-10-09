@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26162B9728E74F5100BFF60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26162B9628E74F5100BFF60B /* LaunchScreen.storyboard */; };
+		264CC8F328D0147F0010636F /* NQ_DetectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CC8F228D0147F0010636F /* NQ_DetectApp.swift */; };
+		264CC8F728D0147F0010636F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264CC8F628D0147F0010636F /* Assets.xcassets */; };
+		264CC8FA28D0147F0010636F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264CC8F928D0147F0010636F /* Preview Assets.xcassets */; };
+		26872DF228D15979000B1DD8 /* ObjectDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872DF128D15979000B1DD8 /* ObjectDetection.swift */; };
+		26F9099A28F309BE00F0E537 /* Labeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9099928F309BE00F0E537 /* Labeling.swift */; };
+		26F909AC28F30A3400F0E537 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9099E28F30A3400F0E537 /* Camera.swift */; };
+		26F909AE28F30A3400F0E537 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A028F30A3400F0E537 /* DataModel.swift */; };
+		26F909AF28F30A3400F0E537 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A128F30A3400F0E537 /* PhotoView.swift */; };
+		26F909B128F30A3400F0E537 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A328F30A3400F0E537 /* CameraView.swift */; };
+		26F909B228F30A3400F0E537 /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A428F30A3400F0E537 /* ViewfinderView.swift */; };
+		26F909B928F3127200F0E537 /* yolov7-tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 26F909B828F3127200F0E537 /* yolov7-tiny.mlmodel */; settings = {COMPILER_FLAGS = "--encrypt \"$SRCROOT/NQ-Detect/Object Detection/yolov7-tiny.mlmodelkey\""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26162B9628E74F5100BFF60B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		264CC8EF28D0147F0010636F /* NQ Detect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NQ Detect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		264CC8F228D0147F0010636F /* NQ_DetectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQ_DetectApp.swift; sourceTree = "<group>"; };
+		264CC8F628D0147F0010636F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		264CC8F928D0147F0010636F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26872DF128D15979000B1DD8 /* ObjectDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetection.swift; sourceTree = "<group>"; };
+		26F9099928F309BE00F0E537 /* Labeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labeling.swift; sourceTree = "<group>"; };
+		26F9099E28F30A3400F0E537 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		26F909A028F30A3400F0E537 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		26F909A128F30A3400F0E537 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		26F909A328F30A3400F0E537 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		26F909A428F30A3400F0E537 /* ViewfinderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewfinderView.swift; sourceTree = "<group>"; };
+		26F909B828F3127200F0E537 /* yolov7-tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolov7-tiny.mlmodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		264CC8EC28D0147F0010636F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264CC8E628D0147F0010636F = {
+			isa = PBXGroup;
+			children = (
+				264CC8F128D0147F0010636F /* NQ-Detect */,
+				264CC8F028D0147F0010636F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		264CC8F028D0147F0010636F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				264CC8EF28D0147F0010636F /* NQ Detect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		264CC8F128D0147F0010636F /* NQ-Detect */ = {
+			isa = PBXGroup;
+			children = (
+				26F909B728F30B7300F0E537 /* Object Detection */,
+				26F9099828F3092800F0E537 /* Camera */,
+				26162B9628E74F5100BFF60B /* LaunchScreen.storyboard */,
+				264CC8F228D0147F0010636F /* NQ_DetectApp.swift */,
+				264CC8F628D0147F0010636F /* Assets.xcassets */,
+				264CC8F828D0147F0010636F /* Preview Content */,
+			);
+			path = "NQ-Detect";
+			sourceTree = "<group>";
+		};
+		264CC8F828D0147F0010636F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				264CC8F928D0147F0010636F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26F9099828F3092800F0E537 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				26F9099E28F30A3400F0E537 /* Camera.swift */,
+				26F909A328F30A3400F0E537 /* CameraView.swift */,
+				26F909A028F30A3400F0E537 /* DataModel.swift */,
+				26F909A128F30A3400F0E537 /* PhotoView.swift */,
+				26F909A428F30A3400F0E537 /* ViewfinderView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		26F909B728F30B7300F0E537 /* Object Detection */ = {
+			isa = PBXGroup;
+			children = (
+				26872DF128D15979000B1DD8 /* ObjectDetection.swift */,
+				26F909B828F3127200F0E537 /* yolov7-tiny.mlmodel */,
+				26F9099928F309BE00F0E537 /* Labeling.swift */,
+			);
+			path = "Object Detection";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		264CC8EE28D0147F0010636F /* NQ Detect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264CC8FD28D0147F0010636F /* Build configuration list for PBXNativeTarget "NQ Detect" */;
+			buildPhases = (
+				264CC8EB28D0147F0010636F /* Sources */,
+				264CC8EC28D0147F0010636F /* Frameworks */,
+				264CC8ED28D0147F0010636F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NQ Detect";
+			productName = "coreml-object-detection";
+			productReference = 264CC8EF28D0147F0010636F /* NQ Detect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		264CC8E728D0147F0010636F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					264CC8EE28D0147F0010636F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 264CC8EA28D0147F0010636F /* Build configuration list for PBXProject "NQ-Detect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 264CC8E628D0147F0010636F;
+			productRefGroup = 264CC8F028D0147F0010636F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				264CC8EE28D0147F0010636F /* NQ Detect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		264CC8ED28D0147F0010636F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26162B9728E74F5100BFF60B /* LaunchScreen.storyboard in Resources */,
+				264CC8FA28D0147F0010636F /* Preview Assets.xcassets in Resources */,
+				264CC8F728D0147F0010636F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		264CC8EB28D0147F0010636F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F909B928F3127200F0E537 /* yolov7-tiny.mlmodel in Sources */,
+				26F9099A28F309BE00F0E537 /* Labeling.swift in Sources */,
+				26F909B128F30A3400F0E537 /* CameraView.swift in Sources */,
+				26F909AE28F30A3400F0E537 /* DataModel.swift in Sources */,
+				26F909AF28F30A3400F0E537 /* PhotoView.swift in Sources */,
+				26872DF228D15979000B1DD8 /* ObjectDetection.swift in Sources */,
+				264CC8F328D0147F0010636F /* NQ_DetectApp.swift in Sources */,
+				26F909B228F30A3400F0E537 /* ViewfinderView.swift in Sources */,
+				26F909AC28F30A3400F0E537 /* Camera.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		264CC8FB28D0147F0010636F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		264CC8FC28D0147F0010636F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		264CC8FE28D0147F0010636F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NQ-Detect/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KGD47F3A4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NQ-Detect/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NQ Detect";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera capture is used as input to the object detection model in order to produce the results.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Used to Save taken photos to your photo library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QN.nqdetect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		264CC8FF28D0147F0010636F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NQ-Detect/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KGD47F3A4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NQ-Detect/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NQ Detect";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera capture is used as input to the object detection model in order to produce the results.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Used to Save taken photos to your photo library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QN.nqdetect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		264CC8EA28D0147F0010636F /* Build configuration list for PBXProject "NQ-Detect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264CC8FB28D0147F0010636F /* Debug */,
+				264CC8FC28D0147F0010636F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		264CC8FD28D0147F0010636F /* Build configuration list for PBXNativeTarget "NQ Detect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264CC8FE28D0147F0010636F /* Debug */,
+				264CC8FF28D0147F0010636F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 264CC8E728D0147F0010636F /* Project object */;
+}
