@@ -7,7 +7,7 @@ import AVFoundation
 import Vision
 import CoreImage
 
-class ObjectDetection: ObservableObject{
+class ObjectDetection{
     var detectionRequest:VNCoreMLRequest!
     var ready = false
     

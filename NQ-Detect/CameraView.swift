@@ -8,7 +8,7 @@ import SwiftUI
 struct CameraView: View {
     @StateObject private var model = DataModel()
  
-    private static let barHeightFactor = 0.12
+    private static let barHeightFactor = 0.10
     
     @State private var isImageTaken = false
     
@@ -27,7 +27,7 @@ struct CameraView: View {
                     }
                     .overlay(alignment: .bottom) {
                         buttonsView()
-                            .frame(height: geometry.size.height * Self.barHeightFactor)
+                            .frame(height: geometry.size.height * (Self.barHeightFactor+0.05))
                             .background(.black.opacity(0.7))
                     }
                     .overlay(alignment: .center)  {

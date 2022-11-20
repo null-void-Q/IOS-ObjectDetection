@@ -3,8 +3,8 @@ import SwiftUI
 
 final class DataModel: NSObject,ObservableObject {
     let camera = Camera()
-    @ObservedObject var detector = ObjectDetection()
-    @ObservedObject var labeler = Labeling()
+    var detector = ObjectDetection()
+    var labeler = Labeling()
     
     @Published var viewfinderImage: Image?
     @Published var thumbnailImage: Image?
@@ -45,7 +45,7 @@ final class DataModel: NSObject,ObservableObject {
     
     func handleCameraPhotos() async {
         let unpackedPhotoStream = camera.photoStream
-            .compactMap { await self.unpackPhoto($0) }
+            .compactMap { self.unpackPhoto($0) }
         
         for await photoData in unpackedPhotoStream {
             Task { @MainActor in

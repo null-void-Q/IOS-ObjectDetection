@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Labeling: ObservableObject{
+class Labeling{
     
     private var labelColors: [String: CGColor] = [:]
     

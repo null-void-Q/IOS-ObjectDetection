@@ -70,6 +70,8 @@
 				26F909B728F30B7300F0E537 /* Object Detection */,
 				26F9099828F3092800F0E537 /* Camera */,
 				26162B9628E74F5100BFF60B /* LaunchScreen.storyboard */,
+				26F909A328F30A3400F0E537 /* CameraView.swift */,
+				26F909A028F30A3400F0E537 /* DataModel.swift */,
 				264CC8F228D0147F0010636F /* NQ_DetectApp.swift */,
 				264CC8F628D0147F0010636F /* Assets.xcassets */,
 				264CC8F828D0147F0010636F /* Preview Content */,
@@ -89,8 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				26F9099E28F30A3400F0E537 /* Camera.swift */,
-				26F909A328F30A3400F0E537 /* CameraView.swift */,
-				26F909A028F30A3400F0E537 /* DataModel.swift */,
 				26F909A128F30A3400F0E537 /* PhotoView.swift */,
 				26F909A428F30A3400F0E537 /* ViewfinderView.swift */,
 			);
@@ -123,6 +123,8 @@
 			dependencies = (
 			);
 			name = "NQ Detect";
+			packageProductDependencies = (
+			);
 			productName = "coreml-object-detection";
 			productReference = 264CC8EF28D0147F0010636F /* NQ Detect.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +153,8 @@
 				Base,
 			);
 			mainGroup = 264CC8E628D0147F0010636F;
+			packageReferences = (
+			);
 			productRefGroup = 264CC8F028D0147F0010636F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,7 +324,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NQ-Detect/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "NQ Detect";
+				INFOPLIST_KEY_CFBundleDisplayName = "NQ: Detect";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera capture is used as input to the object detection model in order to produce the results.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Used to Save taken photos to your photo library";
@@ -357,7 +361,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NQ-Detect/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "NQ Detect";
+				INFOPLIST_KEY_CFBundleDisplayName = "NQ: Detect";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera capture is used as input to the object detection model in order to produce the results.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Used to Save taken photos to your photo library";

@@ -21,7 +21,7 @@
                                 <rect key="frame" x="79" y="240" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="lBq-bd-0rE"/>
-                                    <constraint firstAttribute="height" constant="256" id="v7r-Ln-v8R"/>
+                                    <constraint firstAttribute="width" constant="256" id="v7r-Ln-v8R"/>
                                     <constraint firstAttribute="width" secondItem="aIQ-M3-iTB" secondAttribute="height" multiplier="1:1" id="zdc-2C-PHf"/>
                                 </constraints>
                             </imageView>
