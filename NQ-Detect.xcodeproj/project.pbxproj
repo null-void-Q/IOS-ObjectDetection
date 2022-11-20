@@ -18,7 +18,7 @@
 		26F909AF28F30A3400F0E537 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A128F30A3400F0E537 /* PhotoView.swift */; };
 		26F909B128F30A3400F0E537 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A328F30A3400F0E537 /* CameraView.swift */; };
 		26F909B228F30A3400F0E537 /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F909A428F30A3400F0E537 /* ViewfinderView.swift */; };
-		26F909B928F3127200F0E537 /* yolov7-tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 26F909B828F3127200F0E537 /* yolov7-tiny.mlmodel */; settings = {COMPILER_FLAGS = "--encrypt \"$SRCROOT/NQ-Detect/Object Detection/yolov7-tiny.mlmodelkey\""; }; };
+		26F909B928F3127200F0E537 /* yolov7-tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 26F909B828F3127200F0E537 /* yolov7-tiny.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
