@@ -55,6 +55,10 @@ struct CameraView: View {
                     model.thumbnailImage = nil
                     
                 }
+            }.onAppear(){
+                UIApplication.shared.isIdleTimerDisabled = true
+            }.onDisappear(){
+                UIApplication.shared.isIdleTimerDisabled = false
             }
             
         }
