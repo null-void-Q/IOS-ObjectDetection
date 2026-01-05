@@ -12,6 +12,7 @@ iOS app that runs YOLOv7 object detection model on device camera feed.
 git clone https://github.com/yourusername/coreml-object-detection.git
 ```
 open CoreMLObjDetect.xcodeproj
+
 Configure signing team and bundle identifier, then run on device.
 
 ## Features
