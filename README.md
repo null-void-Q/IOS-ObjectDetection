@@ -21,7 +21,7 @@ Configure signing team and bundle identifier, then run on device.
 - Camera-based inference
 - Bounding boxes and labels
 
-![Screenshot](https://user-images.githubusercontent.com/53970206/202893416-d4b3eb0d-88e9-4303-ac4c-927d3ef5ec1c.png)
+<div style="text-align: center;"> <img src="https://user-images.githubusercontent.com/53970206/202893416-d4b3eb0d-88e9-4303-ac4c-927d3ef5ec1c.png" alt="Screenshot" style="max-height: 600px; width: auto;"> </div>
 
 ## Notes
 - Must run on physical device
